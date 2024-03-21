@@ -91,8 +91,6 @@ export class StocksService {
       this.cronSymbols.push(symbol);
     }
     for (const symbol of this.cronSymbols) {
-      console.log(symbol);
-      console.log(this.cronSymbols);
       const response = await this.makeRequest(symbol);
       const data = await response.json();
       await this.storeData(data.c, symbol);
