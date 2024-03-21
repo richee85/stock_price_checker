@@ -26,36 +26,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## About
+The application will listen on http://localhost:3000 after start.
+You can connect to the dockerized postgresql db with pgadmin on http://localhost:5050.
 
+## Prerequisites
+Copy ``.env.sample`` in the root directory to ``.env`` and fill the Finnhub API key.
+
+## Run the application
 ```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ docker compose up -d
 ```
 
 ## Support
